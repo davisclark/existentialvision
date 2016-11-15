@@ -297,12 +297,12 @@ class Entry(db.Model):
 
     def to_json(self):
         share_entry = {
-            'comment': 'Check out this neat entry published by Davis Clark.',
             'content': {
                 'title': self.title,
-                'submitted_url': url_for('main.entry', eyear=self.published.year, emonth=self.published.month, url=self.url, _external=True),
-                'description': self.body
+                'description': self.body,
+                'submitted_url': url_for('main.entry', eyear=self.published.year, emonth=self.published.month, url=self.url, _external=True)
             },
+            'comment': 'Check out this neat entry published by Davis Clark.',
             'visibility': {
                 'code': 'anyone'
             }
