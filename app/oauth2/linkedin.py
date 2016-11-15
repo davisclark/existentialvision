@@ -11,7 +11,7 @@ client_id = '75lkk6j4fyox43'
 client_secret = 'nrYmLETLi80XAw2Q'
 authorization_base_url = 'https://www.linkedin.com/uas/oauth2/authorization'
 token_url = 'https://www.linkedin.com/uas/oauth2/accessToken'
-scope = ['r_basicprofile w_share r_network']
+scope = ['r_basicprofile w_share']
 
 
 @oauth2.route('/callback', methods=["GET"])
