@@ -35,14 +35,14 @@
             <a href="//www.linkedin.com/in/davissclark" target="_blank">
                 <img src="{{ grav }}" class="img-thumbnail" id="grav"/>
             </a>
-            <li id = "mess">
-                <br/>
-                <a id = "link" href="">It's done.</a>
-                <br/>
-                <strong>^*click*^</strong>
-                <br/>           
-            </li>
-            <ul class="list-unstyled contact-list">               
+            <ul class="list-unstyled contact-list">        
+                <li id = "mess">
+                    <br/>
+                    <a id = "link" href="">It's done.</a>
+                    <br/>
+                    <strong>^*click*^</strong>
+                    <br/>           
+                </li>
                 <li class="option">
                     Email:<a href="mailto:davissclark@gmail.com"> davissclark@gmail.com</a>
                 </li>
@@ -85,8 +85,8 @@
 <div class="clearfix"></div>
 {% block scripts %}
 <script>
-    $('#link').click(function () {
-        $("#mess").hide();
+    $('#mess').click(function () {
+        $("#link").hide();
     });
 </script>
 <script src="{{ url_for('static', filename='scripts/showdown.js') }}"></script>
