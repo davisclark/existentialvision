@@ -42,6 +42,7 @@
                     <br/>
                     <strong>^*click*^</strong>
                     <br/>           
+                    <br/>
                 </li>
                 <li class="option">
                     Email:<a href="mailto:davissclark@gmail.com"> davissclark@gmail.com</a>
@@ -87,7 +88,7 @@
 <script>
     $('#mess').click(function () {
         $(this).hide();
-        $(this).html("<p>*takes a bow*</p>").hide().fadeIn(5000);
+        $(this).html("<br/><p>*takes a bow*</p><br/>").hide().fadeIn(5000);
     });
 </script>
 <script src="{{ url_for('static', filename='scripts/showdown.js') }}"></script>
