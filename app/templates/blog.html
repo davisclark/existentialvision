@@ -38,7 +38,7 @@
             <ul class="list-unstyled contact-list">        
                 <li id = "mess" class = "option">
                     <br/>
-                    <a id = "link" href="">It's done.</a>
+                    <a>It's done.</a>
                     <br/>
                     <strong>^*click*^</strong>
                     <br/>           
@@ -86,7 +86,7 @@
 {% block scripts %}
 <script>
     $('#mess').click(function () {
-        $("#link").hide();
+        $(this).hide();
     });
 </script>
 <script src="{{ url_for('static', filename='scripts/showdown.js') }}"></script>
