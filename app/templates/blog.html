@@ -36,11 +36,9 @@
                 <img src="{{ grav }}" class="img-thumbnail" id="grav"/>
             </a>
             <ul class="list-unstyled contact-list">
-                <li class="option">
-                    <p>Do you think he chose that long gap before the text fades in on purpose? Like to symbolize silence maybe?</p>
-                    <p>*turns the music up in his headphones*</p>
+                <li id = "mess" class="option">
                     <br/>
-                    <a href="//www.silentsamantha.com">It's done.</a>
+                    <a id = "link" href="">It's done.</a>
                     <br/>
                     <p>^*click*^</p>
                     <br/>           
@@ -86,6 +84,12 @@
 </div>
 <div class="clearfix"></div>
 {% block scripts %}
+<script>
+    $('#link').click(function () {
+        $(this).hide();
+        setTimeout(function () { $("#mess").html("<p>*takes a bow*</p>").hide().fadeIn(500); }, 500);
+    });
+</script>
 <script src="{{ url_for('static', filename='scripts/showdown.js') }}"></script>
 <script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
 <script src="{{ url_for('static', filename='scripts/blog.js') }}"></script>
