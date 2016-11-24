@@ -36,14 +36,6 @@
                 <img src="{{ grav }}" class="img-thumbnail" id="grav"/>
             </a>
             <ul class="list-unstyled contact-list">        
-                <li id = "mess" class = "option">
-                    <br/>
-                    <a>It's done.</a>
-                    <br/>
-                    ^*click*^
-                    <br/>           
-                    <br/>
-                </li>
                 <li class="option">
                     Email:<a href="mailto:davissclark@gmail.com"> davissclark@gmail.com</a>
                 </li>
@@ -85,12 +77,6 @@
 </div>
 <div class="clearfix"></div>
 {% block scripts %}
-<script>
-    $('#mess').click(function () {
-        $(this).hide();
-        $(this).html("<br/><p>*takes a bow*</p><br/>").hide().fadeIn(5000);
-    });
-</script>
 <script src="{{ url_for('static', filename='scripts/showdown.js') }}"></script>
 <script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
 <script src="{{ url_for('static', filename='scripts/blog.js') }}"></script>
